@@ -65,7 +65,6 @@ This project follows an Agile methodology:
 ---
 
 ## 📸 Dashboard Preview
-Project Executable Files/Dashboard.png
 https://github.com/VishnuMavilla004/Cosmetic-Insights-using-Tableau/blob/main/Project%20Executable%20Files/Dashboard.png
 ---
 
