@@ -65,7 +65,7 @@ This project follows an Agile methodology:
 ---
 
 ## 📸 Dashboard Preview
-(Add screenshots here from your Tableau dashboards)
+(Project Executable Files/Dashboard.png)
 
 ---
 
