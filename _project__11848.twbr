@@ -1,0 +1,1892 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0514.2217                               -->
+<workbook original-version='18.1' source-build='2025.2.0 (20252.25.0514.2217)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='project_17509295432710' path='/workbooks' revision='1.1' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='cosmetics' inline='true' name='federated.18ts86l1qhm9kd16bf8og07k3y97' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='cosmetics' name='textscan.0ldbbih04fpof915iyyco1yt9u68'>
+            <connection class='textscan' directory='F:/Data Analytics with Tableau' filename='cosmetics.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0ldbbih04fpof915iyyco1yt9u68' name='cosmetics.csv' table='[cosmetics#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='Label' ordinal='0' />
+            <column datatype='string' name='Brand' ordinal='1' />
+            <column datatype='string' name='Name' ordinal='2' />
+            <column datatype='integer' name='Price' ordinal='3' />
+            <column datatype='real' name='Rank' ordinal='4' />
+            <column datatype='string' name='Ingredients' ordinal='5' />
+            <column datatype='integer' name='Combination' ordinal='6' />
+            <column datatype='integer' name='Dry' ordinal='7' />
+            <column datatype='integer' name='Normal' ordinal='8' />
+            <column datatype='integer' name='Oily' ordinal='9' />
+            <column datatype='integer' name='Sensitive' ordinal='10' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[cosmetics.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Label</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Label]</local-name>
+            <parent-name>[cosmetics.csv]</parent-name>
+            <remote-alias>Label</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[cosmetics.csv_7E554183CCA1495CBEA5020CA990CFDB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Brand</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Brand]</local-name>
+            <parent-name>[cosmetics.csv]</parent-name>
+            <remote-alias>Brand</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[cosmetics.csv_7E554183CCA1495CBEA5020CA990CFDB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Name]</local-name>
+            <parent-name>[cosmetics.csv]</parent-name>
+            <remote-alias>Name</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[cosmetics.csv_7E554183CCA1495CBEA5020CA990CFDB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Price</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Price]</local-name>
+            <parent-name>[cosmetics.csv]</parent-name>
+            <remote-alias>Price</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cosmetics.csv_7E554183CCA1495CBEA5020CA990CFDB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Rank</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Rank]</local-name>
+            <parent-name>[cosmetics.csv]</parent-name>
+            <remote-alias>Rank</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cosmetics.csv_7E554183CCA1495CBEA5020CA990CFDB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ingredients</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Ingredients]</local-name>
+            <parent-name>[cosmetics.csv]</parent-name>
+            <remote-alias>Ingredients</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[cosmetics.csv_7E554183CCA1495CBEA5020CA990CFDB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Combination</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Combination]</local-name>
+            <parent-name>[cosmetics.csv]</parent-name>
+            <remote-alias>Combination</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cosmetics.csv_7E554183CCA1495CBEA5020CA990CFDB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Dry</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Dry]</local-name>
+            <parent-name>[cosmetics.csv]</parent-name>
+            <remote-alias>Dry</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cosmetics.csv_7E554183CCA1495CBEA5020CA990CFDB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Normal</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Normal]</local-name>
+            <parent-name>[cosmetics.csv]</parent-name>
+            <remote-alias>Normal</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cosmetics.csv_7E554183CCA1495CBEA5020CA990CFDB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Oily</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Oily]</local-name>
+            <parent-name>[cosmetics.csv]</parent-name>
+            <remote-alias>Oily</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cosmetics.csv_7E554183CCA1495CBEA5020CA990CFDB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sensitive</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sensitive]</local-name>
+            <parent-name>[cosmetics.csv]</parent-name>
+            <remote-alias>Sensitive</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cosmetics.csv_7E554183CCA1495CBEA5020CA990CFDB]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Brand]' role='dimension' type='nominal' />
+      <column caption='Oily suitability level' datatype='string' name='[Calculation_767582286114672640]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [Oily] =0 THEN &quot;Not Suitable&quot;&#13;&#10;ELSEIF [Oily]=1 THEN &quot;Moderate Suitable&quot;&#13;&#10;ELSE &quot;Suitable&quot;&#13;&#10;END' />
+      </column>
+      <column aggregation='CountD' datatype='string' name='[Label]' role='dimension' type='nominal' />
+      <column aggregation='Sum' datatype='integer' name='[Normal]' role='dimension' type='ordinal' />
+      <column caption='cosmetics.csv' datatype='table' name='[__tableau_internal_object_id__].[cosmetics.csv_7E554183CCA1495CBEA5020CA990CFDB]' role='measure' type='quantitative' />
+      <column-instance column='[Brand]' derivation='None' name='[none:Brand:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Calculation_767582286114672640]' derivation='None' name='[none:Calculation_767582286114672640:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/Teja Kommuri/Documents/My Tableau Repository/Datasources/cosmetics.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='06/26/2025 09:18:43 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='cosmetics' increment-value='%null%' refresh-type='create' rows-inserted='1472' timestamp-start='2025-06-26 09:18:43.268' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Label</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Label]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Label</remote-alias>
+              <ordinal>0</ordinal>
+              <family>cosmetics.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[cosmetics.csv_7E554183CCA1495CBEA5020CA990CFDB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Brand</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Brand]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Brand</remote-alias>
+              <ordinal>1</ordinal>
+              <family>cosmetics.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>108</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[cosmetics.csv_7E554183CCA1495CBEA5020CA990CFDB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Name</remote-alias>
+              <ordinal>2</ordinal>
+              <family>cosmetics.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1472</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[cosmetics.csv_7E554183CCA1495CBEA5020CA990CFDB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Price</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Price]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Price</remote-alias>
+              <ordinal>3</ordinal>
+              <family>cosmetics.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>143</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cosmetics.csv_7E554183CCA1495CBEA5020CA990CFDB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Rank</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Rank]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Rank</remote-alias>
+              <ordinal>4</ordinal>
+              <family>cosmetics.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cosmetics.csv_7E554183CCA1495CBEA5020CA990CFDB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Ingredients</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Ingredients]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Ingredients</remote-alias>
+              <ordinal>5</ordinal>
+              <family>cosmetics.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1150</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[cosmetics.csv_7E554183CCA1495CBEA5020CA990CFDB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Combination</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Combination]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Combination</remote-alias>
+              <ordinal>6</ordinal>
+              <family>cosmetics.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cosmetics.csv_7E554183CCA1495CBEA5020CA990CFDB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Dry</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Dry]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Dry</remote-alias>
+              <ordinal>7</ordinal>
+              <family>cosmetics.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cosmetics.csv_7E554183CCA1495CBEA5020CA990CFDB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Normal</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Normal]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Normal</remote-alias>
+              <ordinal>8</ordinal>
+              <family>cosmetics.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cosmetics.csv_7E554183CCA1495CBEA5020CA990CFDB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Oily</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Oily]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Oily</remote-alias>
+              <ordinal>9</ordinal>
+              <family>cosmetics.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cosmetics.csv_7E554183CCA1495CBEA5020CA990CFDB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sensitive</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Sensitive]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Sensitive</remote-alias>
+              <ordinal>10</ordinal>
+              <family>cosmetics.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cosmetics.csv_7E554183CCA1495CBEA5020CA990CFDB]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Calculation_767582286114672640:nk]' palette='orange_gold_10_0' type='palette'>
+            <map to='#9e3a26'>
+              <bucket>&quot;Not Suitable&quot;</bucket>
+            </map>
+            <map to='#f4d166'>
+              <bucket>&quot;Moderate Suitable&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Brand:nk]' palette='red_gold_10_0' type='palette'>
+            <map to='#b71d3e'>
+              <bucket>&quot;YVES SAINT LAURENT&quot;</bucket>
+            </map>
+            <map to='#b81e3e'>
+              <bucket>&quot;YOUTH TO THE PEOPLE&quot;</bucket>
+            </map>
+            <map to='#b9203e'>
+              <bucket>&quot;WANDER BEAUTY&quot;</bucket>
+            </map>
+            <map to='#ba223e'>
+              <bucket>&quot;VOLITION BEAUTY&quot;</bucket>
+            </map>
+            <map to='#bb233f'>
+              <bucket>&quot;VITA LIBERATA&quot;</bucket>
+            </map>
+            <map to='#bc253f'>
+              <bucket>&quot;URBAN DECAY&quot;</bucket>
+            </map>
+            <map to='#bd273f'>
+              <bucket>&quot;TOO FACED&quot;</bucket>
+            </map>
+            <map to='#be293f'>
+              <bucket>&quot;TOO COOL FOR SCHOOL&quot;</bucket>
+            </map>
+            <map to='#c02a40'>
+              <bucket>&quot;TOM FORD&quot;</bucket>
+            </map>
+            <map to='#c12c40'>
+              <bucket>&quot;TATCHA&quot;</bucket>
+            </map>
+            <map to='#c22e40'>
+              <bucket>&quot;TATA HARPER&quot;</bucket>
+            </map>
+            <map to='#c33040'>
+              <bucket>&quot;TARTE&quot;</bucket>
+            </map>
+            <map to='#c43141'>
+              <bucket>&quot;SUPERGOOP!&quot;</bucket>
+            </map>
+            <map to='#c53341'>
+              <bucket>&quot;SUNDAY RILEY&quot;</bucket>
+            </map>
+            <map to='#c63441'>
+              <bucket>&quot;SUMMER FRIDAYS&quot;</bucket>
+            </map>
+            <map to='#c73641'>
+              <bucket>&quot;ST. TROPEZ TANNING ESSENTIALS&quot;</bucket>
+            </map>
+            <map to='#c83742'>
+              <bucket>&quot;SON &amp; PARK&quot;</bucket>
+            </map>
+            <map to='#c93942'>
+              <bucket>&quot;SMASHBOX&quot;</bucket>
+            </map>
+            <map to='#ca3a42'>
+              <bucket>&quot;SKIN LAUNDRY&quot;</bucket>
+            </map>
+            <map to='#cb3c42'>
+              <bucket>&quot;SKIN INC SUPPLEMENT BAR&quot;</bucket>
+            </map>
+            <map to='#cc3d43'>
+              <bucket>&quot;SK-II&quot;</bucket>
+            </map>
+            <map to='#cd3f43'>
+              <bucket>&quot;SHISEIDO&quot;</bucket>
+            </map>
+            <map to='#ce4043'>
+              <bucket>&quot;SEPHORA COLLECTION&quot;</bucket>
+            </map>
+            <map to='#cf4244'>
+              <bucket>&quot;SATURDAY SKIN&quot;</bucket>
+            </map>
+            <map to='#d04344'>
+              <bucket>&quot;SAND &amp; SKY&quot;</bucket>
+            </map>
+            <map to='#d14444'>
+              <bucket>&quot;REN CLEAN SKINCARE&quot;</bucket>
+            </map>
+            <map to='#d24644'>
+              <bucket>&quot;PRIVATE DOCTOR&quot;</bucket>
+            </map>
+            <map to='#d34745'>
+              <bucket>&quot;PHILOSOPHY&quot;</bucket>
+            </map>
+            <map to='#d44845'>
+              <bucket>&quot;PETER THOMAS ROTH&quot;</bucket>
+            </map>
+            <map to='#d54a45'>
+              <bucket>&quot;PERRICONE MD&quot;</bucket>
+            </map>
+            <map to='#d64b45'>
+              <bucket>&quot;PEACE OUT&quot;</bucket>
+            </map>
+            <map to='#d74d46'>
+              <bucket>&quot;ORIGINS&quot;</bucket>
+            </map>
+            <map to='#d84e46'>
+              <bucket>&quot;OMOROVICZA&quot;</bucket>
+            </map>
+            <map to='#d94f46'>
+              <bucket>&quot;OLEHENRIKSEN&quot;</bucket>
+            </map>
+            <map to='#da5146'>
+              <bucket>&quot;NURSE JAMIE&quot;</bucket>
+            </map>
+            <map to='#db5247'>
+              <bucket>&quot;NUFACE&quot;</bucket>
+            </map>
+            <map to='#dc5447'>
+              <bucket>&quot;NEOGEN DERMALOGY&quot;</bucket>
+            </map>
+            <map to='#dd5547'>
+              <bucket>&quot;NATURALLY SERIOUS&quot;</bucket>
+            </map>
+            <map to='#de5647'>
+              <bucket>&quot;NARS&quot;</bucket>
+            </map>
+            <map to='#de5847'>
+              <bucket>&quot;MURAD&quot;</bucket>
+            </map>
+            <map to='#df5947'>
+              <bucket>&quot;MOROCCANOIL&quot;</bucket>
+            </map>
+            <map to='#e05b48'>
+              <bucket>&quot;MOON JUICE&quot;</bucket>
+            </map>
+            <map to='#e15c48'>
+              <bucket>&quot;MILK MAKEUP&quot;</bucket>
+            </map>
+            <map to='#e25d48'>
+              <bucket>&quot;MDSOLARSCIENCES&quot;</bucket>
+            </map>
+            <map to='#e35f48'>
+              <bucket>&quot;MAKEUP ERASER&quot;</bucket>
+            </map>
+            <map to='#e46048'>
+              <bucket>&quot;MAKE UP FOR EVER&quot;</bucket>
+            </map>
+            <map to='#e56249'>
+              <bucket>&quot;LIGHTSTIM&quot;</bucket>
+            </map>
+            <map to='#e56349'>
+              <bucket>&quot;LAURA MERCIER&quot;</bucket>
+            </map>
+            <map to='#e66449'>
+              <bucket>&quot;LANEIGE&quot;</bucket>
+            </map>
+            <map to='#e76649'>
+              <bucket>&quot;LANCÔME&quot;</bucket>
+            </map>
+            <map to='#e86749'>
+              <bucket>&quot;LANCER&quot;</bucket>
+            </map>
+            <map to='#e86949'>
+              <bucket>&quot;LA MER&quot;</bucket>
+            </map>
+            <map to='#e96a49'>
+              <bucket>&quot;L&apos;OCCITANE&quot;</bucket>
+            </map>
+            <map to='#ea6c49'>
+              <bucket>&quot;KORRES&quot;</bucket>
+            </map>
+            <map to='#eb6d49'>
+              <bucket>&quot;KORA ORGANICS&quot;</bucket>
+            </map>
+            <map to='#ec6f49'>
+              <bucket>&quot;KOPARI&quot;</bucket>
+            </map>
+            <map to='#ec7049'>
+              <bucket>&quot;KOH GEN DO&quot;</bucket>
+            </map>
+            <map to='#ed7249'>
+              <bucket>&quot;KLORANE&quot;</bucket>
+            </map>
+            <map to='#ee734a'>
+              <bucket>&quot;KIEHL&apos;S SINCE 1851&quot;</bucket>
+            </map>
+            <map to='#ef754a'>
+              <bucket>&quot;KENZOKI&quot;</bucket>
+            </map>
+            <map to='#ef764a'>
+              <bucket>&quot;KATE SOMERVILLE&quot;</bucket>
+            </map>
+            <map to='#f0774a'>
+              <bucket>&quot;KAT VON D&quot;</bucket>
+            </map>
+            <map to='#f1794a'>
+              <bucket>&quot;KAPLAN MD&quot;</bucket>
+            </map>
+            <map to='#f17a4a'>
+              <bucket>&quot;JOSIE MARAN&quot;</bucket>
+            </map>
+            <map to='#f27c4a'>
+              <bucket>&quot;JACK BLACK&quot;</bucket>
+            </map>
+            <map to='#f37d4a'>
+              <bucket>&quot;J.ONE&quot;</bucket>
+            </map>
+            <map to='#f37e4a'>
+              <bucket>&quot;IT COSMETICS&quot;</bucket>
+            </map>
+            <map to='#f4804a'>
+              <bucket>&quot;INDIE LEE&quot;</bucket>
+            </map>
+            <map to='#f4c860'>
+              <bucket>&quot;BEAUTYBIO&quot;</bucket>
+            </map>
+            <map to='#f4ca61'>
+              <bucket>&quot;BAREMINERALS&quot;</bucket>
+            </map>
+            <map to='#f4cc62'>
+              <bucket>&quot;APIVITA&quot;</bucket>
+            </map>
+            <map to='#f4cd63'>
+              <bucket>&quot;ANTHONY&quot;</bucket>
+            </map>
+            <map to='#f4cf64'>
+              <bucket>&quot;AMOREPACIFIC&quot;</bucket>
+            </map>
+            <map to='#f4d166'>
+              <bucket>&quot;ALGENIST&quot;</bucket>
+            </map>
+            <map to='#f5814a'>
+              <bucket>&quot;ILIA&quot;</bucket>
+            </map>
+            <map to='#f5be59'>
+              <bucket>&quot;BLITHE&quot;</bucket>
+            </map>
+            <map to='#f5c05a'>
+              <bucket>&quot;BLACK UP&quot;</bucket>
+            </map>
+            <map to='#f5c25b'>
+              <bucket>&quot;BIOSSANCE&quot;</bucket>
+            </map>
+            <map to='#f5c35c'>
+              <bucket>&quot;BIOEFFECT&quot;</bucket>
+            </map>
+            <map to='#f5c55e'>
+              <bucket>&quot;BELIF&quot;</bucket>
+            </map>
+            <map to='#f5c75f'>
+              <bucket>&quot;BECCA&quot;</bucket>
+            </map>
+            <map to='#f6834b'>
+              <bucket>&quot;HUM NUTRITION&quot;</bucket>
+            </map>
+            <map to='#f6844b'>
+              <bucket>&quot;HERBIVORE&quot;</bucket>
+            </map>
+            <map to='#f6b756'>
+              <bucket>&quot;CAUDALIE&quot;</bucket>
+            </map>
+            <map to='#f6b957'>
+              <bucket>&quot;CANE + AUSTIN&quot;</bucket>
+            </map>
+            <map to='#f6bb57'>
+              <bucket>&quot;BOSCIA&quot;</bucket>
+            </map>
+            <map to='#f6bd58'>
+              <bucket>&quot;BOBBI BROWN&quot;</bucket>
+            </map>
+            <map to='#f7864b'>
+              <bucket>&quot;GUERLAIN&quot;</bucket>
+            </map>
+            <map to='#f7874b'>
+              <bucket>&quot;GO-TO&quot;</bucket>
+            </map>
+            <map to='#f7b053'>
+              <bucket>&quot;CLINIQUE&quot;</bucket>
+            </map>
+            <map to='#f7b254'>
+              <bucket>&quot;CLARISONIC&quot;</bucket>
+            </map>
+            <map to='#f7b455'>
+              <bucket>&quot;CLARINS&quot;</bucket>
+            </map>
+            <map to='#f7b655'>
+              <bucket>&quot;CHARLOTTE TILBURY&quot;</bucket>
+            </map>
+            <map to='#f8894c'>
+              <bucket>&quot;GLOW RECIPE&quot;</bucket>
+            </map>
+            <map to='#f88b4c'>
+              <bucket>&quot;GLAMGLOW&quot;</bucket>
+            </map>
+            <map to='#f8ab51'>
+              <bucket>&quot;DERMADOCTOR&quot;</bucket>
+            </map>
+            <map to='#f8ad52'>
+              <bucket>&quot;COVER FX&quot;</bucket>
+            </map>
+            <map to='#f8af53'>
+              <bucket>&quot;COOLA&quot;</bucket>
+            </map>
+            <map to='#f98c4c'>
+              <bucket>&quot;FRESH&quot;</bucket>
+            </map>
+            <map to='#f98e4c'>
+              <bucket>&quot;FOREO&quot;</bucket>
+            </map>
+            <map to='#f9a450'>
+              <bucket>&quot;DR. BRANDT SKINCARE&quot;</bucket>
+            </map>
+            <map to='#f9a650'>
+              <bucket>&quot;DR ROEBUCK’S&quot;</bucket>
+            </map>
+            <map to='#f9a850'>
+              <bucket>&quot;DIOR&quot;</bucket>
+            </map>
+            <map to='#f9aa51'>
+              <bucket>&quot;DERMAFLASH&quot;</bucket>
+            </map>
+            <map to='#fa904d'>
+              <bucket>&quot;FIRST AID BEAUTY&quot;</bucket>
+            </map>
+            <map to='#fa914d'>
+              <bucket>&quot;FENTY BEAUTY BY RIHANNA&quot;</bucket>
+            </map>
+            <map to='#fa9d4f'>
+              <bucket>&quot;EDIBLE BEAUTY&quot;</bucket>
+            </map>
+            <map to='#fa9f4f'>
+              <bucket>&quot;DRUNK ELEPHANT&quot;</bucket>
+            </map>
+            <map to='#faa14f'>
+              <bucket>&quot;DR. JART+&quot;</bucket>
+            </map>
+            <map to='#faa34f'>
+              <bucket>&quot;DR. DENNIS GROSS SKINCARE&quot;</bucket>
+            </map>
+            <map to='#fb934d'>
+              <bucket>&quot;FARSÁLI&quot;</bucket>
+            </map>
+            <map to='#fb954d'>
+              <bucket>&quot;FARMACY&quot;</bucket>
+            </map>
+            <map to='#fb964e'>
+              <bucket>&quot;EVE LOM&quot;</bucket>
+            </map>
+            <map to='#fb984e'>
+              <bucket>&quot;ESTÉE LAUDER&quot;</bucket>
+            </map>
+            <map to='#fb9a4e'>
+              <bucket>&quot;ERNO LASZLO&quot;</bucket>
+            </map>
+            <map to='#fb9c4e'>
+              <bucket>&quot;ERBORIAN&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='cosmetics.csv' id='cosmetics.csv_7E554183CCA1495CBEA5020CA990CFDB'>
+            <properties context=''>
+              <relation connection='textscan.0ldbbih04fpof915iyyco1yt9u68' name='cosmetics.csv' table='[cosmetics#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='Label' ordinal='0' />
+                  <column datatype='string' name='Brand' ordinal='1' />
+                  <column datatype='string' name='Name' ordinal='2' />
+                  <column datatype='integer' name='Price' ordinal='3' />
+                  <column datatype='real' name='Rank' ordinal='4' />
+                  <column datatype='string' name='Ingredients' ordinal='5' />
+                  <column datatype='integer' name='Combination' ordinal='6' />
+                  <column datatype='integer' name='Dry' ordinal='7' />
+                  <column datatype='integer' name='Normal' ordinal='8' />
+                  <column datatype='integer' name='Oily' ordinal='9' />
+                  <column datatype='integer' name='Sensitive' ordinal='10' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Brand vs Ranking'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Brand vs Ranking</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cosmetics' name='federated.18ts86l1qhm9kd16bf8og07k3y97' />
+          </datasources>
+          <datasource-dependencies datasource='federated.18ts86l1qhm9kd16bf8og07k3y97'>
+            <column datatype='string' name='[Brand]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Combination]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Rank]' role='measure' type='quantitative' />
+            <column-instance column='[Rank]' derivation='Count' name='[cnt:Rank:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Brand]' derivation='None' name='[none:Brand:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Combination]' derivation='Sum' name='[sum:Combination:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.18ts86l1qhm9kd16bf8og07k3y97].[none:Brand:nk]'>
+            <groupfilter count='5' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='COUNT([Rank])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:Brand:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.18ts86l1qhm9kd16bf8og07k3y97].[none:Brand:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.18ts86l1qhm9kd16bf8og07k3y97].[sum:Combination:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.18ts86l1qhm9kd16bf8og07k3y97].[cnt:Rank:qk]</rows>
+        <cols>[federated.18ts86l1qhm9kd16bf8og07k3y97].[none:Brand:nk]</cols>
+      </table>
+      <simple-id uuid='{D8CBEFCB-6841-4EDD-AAF8-C7C5F5ED857D}' />
+    </worksheet>
+    <worksheet name='Dry Skin Suitability'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Dry Skin Suitability</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cosmetics' name='federated.18ts86l1qhm9kd16bf8og07k3y97' />
+          </datasources>
+          <datasource-dependencies datasource='federated.18ts86l1qhm9kd16bf8og07k3y97'>
+            <column datatype='string' name='[Brand]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Dry]' role='measure' type='quantitative' />
+            <column-instance column='[Brand]' derivation='None' name='[none:Brand:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Dry]' derivation='Sum' name='[sum:Dry:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.18ts86l1qhm9kd16bf8og07k3y97].[none:Brand:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Brand:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:Brand:nk]' member='&quot;ALGENIST&quot;' />
+                <groupfilter function='member' level='[none:Brand:nk]' member='&quot;AMOREPACIFIC&quot;' />
+                <groupfilter function='member' level='[none:Brand:nk]' member='&quot;ANTHONY&quot;' />
+                <groupfilter function='member' level='[none:Brand:nk]' member='&quot;BAREMINERALS&quot;' />
+                <groupfilter function='member' level='[none:Brand:nk]' member='&quot;BEAUTYBIO&quot;' />
+                <groupfilter function='member' level='[none:Brand:nk]' member='&quot;BECCA&quot;' />
+                <groupfilter function='member' level='[none:Brand:nk]' member='&quot;BIOEFFECT&quot;' />
+                <groupfilter function='member' level='[none:Brand:nk]' member='&quot;BIOSSANCE&quot;' />
+                <groupfilter function='member' level='[none:Brand:nk]' member='&quot;BLITHE&quot;' />
+                <groupfilter function='member' level='[none:Brand:nk]' member='&quot;BOBBI BROWN&quot;' />
+                <groupfilter function='member' level='[none:Brand:nk]' member='&quot;CANE + AUSTIN&quot;' />
+                <groupfilter function='member' level='[none:Brand:nk]' member='&quot;CHARLOTTE TILBURY&quot;' />
+                <groupfilter function='member' level='[none:Brand:nk]' member='&quot;CLARISONIC&quot;' />
+                <groupfilter function='member' level='[none:Brand:nk]' member='&quot;DERMADOCTOR&quot;' />
+                <groupfilter function='member' level='[none:Brand:nk]' member='&quot;DERMAFLASH&quot;' />
+                <groupfilter function='member' level='[none:Brand:nk]' member='&quot;DR ROEBUCK’S&quot;' />
+                <groupfilter function='member' level='[none:Brand:nk]' member='&quot;DR. BRANDT SKINCARE&quot;' />
+                <groupfilter function='member' level='[none:Brand:nk]' member='&quot;DR. DENNIS GROSS SKINCARE&quot;' />
+                <groupfilter function='member' level='[none:Brand:nk]' member='&quot;DRUNK ELEPHANT&quot;' />
+                <groupfilter function='member' level='[none:Brand:nk]' member='&quot;EDIBLE BEAUTY&quot;' />
+                <groupfilter function='member' level='[none:Brand:nk]' member='&quot;ERBORIAN&quot;' />
+                <groupfilter function='member' level='[none:Brand:nk]' member='&quot;ERNO LASZLO&quot;' />
+                <groupfilter function='member' level='[none:Brand:nk]' member='&quot;ESTÉE LAUDER&quot;' />
+                <groupfilter function='member' level='[none:Brand:nk]' member='&quot;EVE LOM&quot;' />
+                <groupfilter function='member' level='[none:Brand:nk]' member='&quot;FARMACY&quot;' />
+                <groupfilter function='member' level='[none:Brand:nk]' member='&quot;FOREO&quot;' />
+                <groupfilter function='member' level='[none:Brand:nk]' member='&quot;GLAMGLOW&quot;' />
+                <groupfilter function='member' level='[none:Brand:nk]' member='&quot;GLOW RECIPE&quot;' />
+                <groupfilter function='member' level='[none:Brand:nk]' member='&quot;GO-TO&quot;' />
+                <groupfilter function='member' level='[none:Brand:nk]' member='&quot;GUERLAIN&quot;' />
+                <groupfilter function='member' level='[none:Brand:nk]' member='&quot;HERBIVORE&quot;' />
+                <groupfilter function='member' level='[none:Brand:nk]' member='&quot;ILIA&quot;' />
+                <groupfilter function='member' level='[none:Brand:nk]' member='&quot;INDIE LEE&quot;' />
+                <groupfilter function='member' level='[none:Brand:nk]' member='&quot;IT COSMETICS&quot;' />
+                <groupfilter function='member' level='[none:Brand:nk]' member='&quot;J.ONE&quot;' />
+                <groupfilter function='member' level='[none:Brand:nk]' member='&quot;JACK BLACK&quot;' />
+                <groupfilter function='member' level='[none:Brand:nk]' member='&quot;JOSIE MARAN&quot;' />
+                <groupfilter function='member' level='[none:Brand:nk]' member='&quot;KLORANE&quot;' />
+                <groupfilter function='member' level='[none:Brand:nk]' member='&quot;KOPARI&quot;' />
+                <groupfilter function='member' level='[none:Brand:nk]' member='&quot;KORA ORGANICS&quot;' />
+                <groupfilter function='member' level='[none:Brand:nk]' member='&quot;LIGHTSTIM&quot;' />
+                <groupfilter function='member' level='[none:Brand:nk]' member='&quot;MDSOLARSCIENCES&quot;' />
+                <groupfilter function='member' level='[none:Brand:nk]' member='&quot;MILK MAKEUP&quot;' />
+                <groupfilter function='member' level='[none:Brand:nk]' member='&quot;MOON JUICE&quot;' />
+                <groupfilter function='member' level='[none:Brand:nk]' member='&quot;MOROCCANOIL&quot;' />
+                <groupfilter function='member' level='[none:Brand:nk]' member='&quot;NATURALLY SERIOUS&quot;' />
+                <groupfilter function='member' level='[none:Brand:nk]' member='&quot;NEOGEN DERMALOGY&quot;' />
+                <groupfilter function='member' level='[none:Brand:nk]' member='&quot;NUFACE&quot;' />
+                <groupfilter function='member' level='[none:Brand:nk]' member='&quot;OLEHENRIKSEN&quot;' />
+                <groupfilter function='member' level='[none:Brand:nk]' member='&quot;OMOROVICZA&quot;' />
+                <groupfilter function='member' level='[none:Brand:nk]' member='&quot;PEACE OUT&quot;' />
+                <groupfilter function='member' level='[none:Brand:nk]' member='&quot;PHILOSOPHY&quot;' />
+                <groupfilter function='member' level='[none:Brand:nk]' member='&quot;PRIVATE DOCTOR&quot;' />
+                <groupfilter function='member' level='[none:Brand:nk]' member='&quot;REN CLEAN SKINCARE&quot;' />
+                <groupfilter function='member' level='[none:Brand:nk]' member='&quot;SAND &amp; SKY&quot;' />
+                <groupfilter function='member' level='[none:Brand:nk]' member='&quot;SATURDAY SKIN&quot;' />
+                <groupfilter function='member' level='[none:Brand:nk]' member='&quot;SKIN INC SUPPLEMENT BAR&quot;' />
+                <groupfilter function='member' level='[none:Brand:nk]' member='&quot;SKIN LAUNDRY&quot;' />
+                <groupfilter function='member' level='[none:Brand:nk]' member='&quot;SMASHBOX&quot;' />
+                <groupfilter function='member' level='[none:Brand:nk]' member='&quot;SON &amp; PARK&quot;' />
+                <groupfilter function='member' level='[none:Brand:nk]' member='&quot;ST. TROPEZ TANNING ESSENTIALS&quot;' />
+                <groupfilter function='member' level='[none:Brand:nk]' member='&quot;SUMMER FRIDAYS&quot;' />
+                <groupfilter function='member' level='[none:Brand:nk]' member='&quot;SUNDAY RILEY&quot;' />
+                <groupfilter function='member' level='[none:Brand:nk]' member='&quot;SUPERGOOP!&quot;' />
+                <groupfilter function='member' level='[none:Brand:nk]' member='&quot;TATA HARPER&quot;' />
+                <groupfilter function='member' level='[none:Brand:nk]' member='&quot;TOO COOL FOR SCHOOL&quot;' />
+                <groupfilter function='member' level='[none:Brand:nk]' member='&quot;VOLITION BEAUTY&quot;' />
+                <groupfilter function='member' level='[none:Brand:nk]' member='&quot;WANDER BEAUTY&quot;' />
+                <groupfilter function='member' level='[none:Brand:nk]' member='&quot;YOUTH TO THE PEOPLE&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.18ts86l1qhm9kd16bf8og07k3y97].[none:Brand:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.18ts86l1qhm9kd16bf8og07k3y97].[none:Brand:nk]' />
+              <size column='[federated.18ts86l1qhm9kd16bf8og07k3y97].[sum:Dry:qk]' />
+              <text column='[federated.18ts86l1qhm9kd16bf8og07k3y97].[none:Brand:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='has-stroke' value='true' />
+                <format attr='mark-color' value='#ffff00' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{F5033629-824C-48D2-B494-5FE4E88F8286}' />
+    </worksheet>
+    <worksheet name='Label Count'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Label Count</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cosmetics' name='federated.18ts86l1qhm9kd16bf8og07k3y97' />
+          </datasources>
+          <datasource-dependencies datasource='federated.18ts86l1qhm9kd16bf8og07k3y97'>
+            <column aggregation='CountD' datatype='string' name='[Label]' role='dimension' type='nominal' />
+            <column-instance column='[Label]' derivation='Count' name='[cnt:Label:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Label]' derivation='None' name='[none:Label:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[federated.18ts86l1qhm9kd16bf8og07k3y97].[none:Label:nk]' value='81' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.18ts86l1qhm9kd16bf8og07k3y97].[cnt:Label:qk]</rows>
+        <cols>[federated.18ts86l1qhm9kd16bf8og07k3y97].[none:Label:nk]</cols>
+      </table>
+      <simple-id uuid='{F262A45E-3242-44C8-ADF6-CF6743894197}' />
+    </worksheet>
+    <worksheet name='Label vs Ranking'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Label vs Ranking</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cosmetics' name='federated.18ts86l1qhm9kd16bf8og07k3y97' />
+          </datasources>
+          <datasource-dependencies datasource='federated.18ts86l1qhm9kd16bf8og07k3y97'>
+            <column datatype='string' name='[Brand]' role='dimension' type='nominal' />
+            <column aggregation='CountD' datatype='string' name='[Label]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Rank]' role='measure' type='quantitative' />
+            <column-instance column='[Brand]' derivation='None' name='[none:Brand:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Label]' derivation='None' name='[none:Label:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Rank]' derivation='Sum' name='[sum:Rank:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.18ts86l1qhm9kd16bf8og07k3y97].[none:Brand:nk]'>
+            <groupfilter count='6' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([Rank])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:Brand:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.18ts86l1qhm9kd16bf8og07k3y97].[none:Brand:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.18ts86l1qhm9kd16bf8og07k3y97].[none:Label:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.18ts86l1qhm9kd16bf8og07k3y97].[sum:Rank:qk]</rows>
+        <cols>[federated.18ts86l1qhm9kd16bf8og07k3y97].[none:Brand:nk]</cols>
+      </table>
+      <simple-id uuid='{E7597D0A-3B80-48FC-A04B-060B97769DB9}' />
+    </worksheet>
+    <worksheet name='Normal Skin Suitability'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Normal Skin Suitability</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cosmetics' name='federated.18ts86l1qhm9kd16bf8og07k3y97' />
+          </datasources>
+          <datasource-dependencies datasource='federated.18ts86l1qhm9kd16bf8og07k3y97'>
+            <column aggregation='Sum' datatype='integer' name='[Normal]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Price]' role='measure' type='quantitative' />
+            <column-instance column='[Normal]' derivation='None' name='[none:Normal:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Price]' derivation='Sum' name='[sum:Price:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='height-header' value='10' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.18ts86l1qhm9kd16bf8og07k3y97].[none:Normal:ok]' />
+              <text column='[federated.18ts86l1qhm9kd16bf8og07k3y97].[sum:Price:qk]' />
+              <lod column='[federated.18ts86l1qhm9kd16bf8og07k3y97].[none:Normal:ok]' />
+            </encodings>
+            <reference-line axis-column='[federated.18ts86l1qhm9kd16bf8og07k3y97].[sum:Price:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.18ts86l1qhm9kd16bf8og07k3y97].[sum:Price:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.18ts86l1qhm9kd16bf8og07k3y97].[sum:Price:qk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{CF4298DE-E064-4A0C-8279-1ACB9E31999B}' />
+    </worksheet>
+    <worksheet name='Oily Skin Suitability'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Oily Skin Suitability</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cosmetics' name='federated.18ts86l1qhm9kd16bf8og07k3y97' />
+          </datasources>
+          <datasource-dependencies datasource='federated.18ts86l1qhm9kd16bf8og07k3y97'>
+            <column datatype='string' name='[Brand]' role='dimension' type='nominal' />
+            <column caption='Oily suitability level' datatype='string' name='[Calculation_767582286114672640]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Oily] =0 THEN &quot;Not Suitable&quot;&#13;&#10;ELSEIF [Oily]=1 THEN &quot;Moderate Suitable&quot;&#13;&#10;ELSE &quot;Suitable&quot;&#13;&#10;END' />
+            </column>
+            <column datatype='integer' name='[Oily]' role='measure' type='quantitative' />
+            <column-instance column='[Oily]' derivation='Count' name='[cnt:Oily:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Brand]' derivation='None' name='[none:Brand:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_767582286114672640]' derivation='None' name='[none:Calculation_767582286114672640:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.18ts86l1qhm9kd16bf8og07k3y97].[none:Brand:nk]'>
+            <groupfilter count='5' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='COUNT([Oily])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:Brand:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.18ts86l1qhm9kd16bf8og07k3y97].[none:Brand:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.18ts86l1qhm9kd16bf8og07k3y97].[none:Calculation_767582286114672640:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.18ts86l1qhm9kd16bf8og07k3y97].[cnt:Oily:qk]</rows>
+        <cols>[federated.18ts86l1qhm9kd16bf8og07k3y97].[none:Brand:nk]</cols>
+      </table>
+      <simple-id uuid='{820A4857-E7F7-4ADB-AF15-FBFAA3A17D55}' />
+    </worksheet>
+    <worksheet name='Price vs Brand'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Price vs Brand</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cosmetics' name='federated.18ts86l1qhm9kd16bf8og07k3y97' />
+          </datasources>
+          <datasource-dependencies datasource='federated.18ts86l1qhm9kd16bf8og07k3y97'>
+            <column datatype='string' name='[Brand]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Price]' role='measure' type='quantitative' />
+            <column-instance column='[Brand]' derivation='None' name='[none:Brand:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Price]' derivation='Sum' name='[sum:Price:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <natural-sort column='[federated.18ts86l1qhm9kd16bf8og07k3y97].[none:Brand:nk]' direction='DESC' />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.18ts86l1qhm9kd16bf8og07k3y97].[none:Brand:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.18ts86l1qhm9kd16bf8og07k3y97].[sum:Price:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.18ts86l1qhm9kd16bf8og07k3y97].[sum:Price:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.18ts86l1qhm9kd16bf8og07k3y97].[sum:Price:qk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{CF61DC0D-F807-4791-B652-BB822D36C5AB}' />
+    </worksheet>
+    <worksheet name='Sensitive Skin Suitability'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Sensitive Skin Suitability</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cosmetics' name='federated.18ts86l1qhm9kd16bf8og07k3y97' />
+          </datasources>
+          <datasource-dependencies datasource='federated.18ts86l1qhm9kd16bf8og07k3y97'>
+            <column datatype='string' name='[Brand]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Sensitive]' role='measure' type='quantitative' />
+            <column-instance column='[Sensitive]' derivation='Count' name='[cnt:Sensitive:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Brand]' derivation='None' name='[none:Brand:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sensitive]' derivation='Sum' name='[sum:Sensitive:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.18ts86l1qhm9kd16bf8og07k3y97].[none:Brand:nk]'>
+            <groupfilter count='9' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='COUNT([Brand])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:Brand:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.18ts86l1qhm9kd16bf8og07k3y97].[none:Brand:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.18ts86l1qhm9kd16bf8og07k3y97].[sum:Sensitive:qk]' />
+              <text column='[federated.18ts86l1qhm9kd16bf8og07k3y97].[cnt:Sensitive:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.18ts86l1qhm9kd16bf8og07k3y97].[cnt:Sensitive:qk]</rows>
+        <cols>[federated.18ts86l1qhm9kd16bf8og07k3y97].[none:Brand:nk]</cols>
+      </table>
+      <simple-id uuid='{1372FA23-74AB-4354-8166-35C25F928A8D}' />
+    </worksheet>
+    <worksheet name='Top 5 Brands'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Top 5 Brands</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cosmetics' name='federated.18ts86l1qhm9kd16bf8og07k3y97' />
+          </datasources>
+          <datasource-dependencies datasource='federated.18ts86l1qhm9kd16bf8og07k3y97'>
+            <column datatype='string' name='[Brand]' role='dimension' type='nominal' />
+            <column aggregation='CountD' datatype='string' name='[Label]' role='dimension' type='nominal' />
+            <column-instance column='[Label]' derivation='CountD' name='[ctd:Label:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Brand]' derivation='None' name='[none:Brand:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.18ts86l1qhm9kd16bf8og07k3y97].[none:Brand:nk]'>
+            <groupfilter count='5' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='COUNTD([Label])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:Brand:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.18ts86l1qhm9kd16bf8og07k3y97].[none:Brand:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.18ts86l1qhm9kd16bf8og07k3y97].[none:Brand:nk]' />
+              <wedge-size column='[federated.18ts86l1qhm9kd16bf8og07k3y97].[ctd:Label:qk]' />
+              <text column='[federated.18ts86l1qhm9kd16bf8og07k3y97].[none:Brand:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{FC18A9D1-DA07-4528-84F7-5DE85A2F252A}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Product Ranking and Detailed Analysis</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='1860' maxwidth='1450' minheight='560' minwidth='420' sizing-mode='range' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98438' id='15' param='horz' type-v2='layout-flow' w='98750' x='625' y='781'>
+            <zone h='98438' id='12' is-fixed='true' type-v2='layout-basic' w='98750' x='625' y='781'>
+              <zone h='98438' id='5' param='vert' type-v2='layout-flow' w='98750' x='625' y='781'>
+                <zone fixed-size='43' h='4980' id='7' is-fixed='true' type-v2='title' w='98750' x='625' y='781'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='2' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='30000' id='16' name='Top 5 Brands' w='28125' x='1250' y='8854'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+        <zone h='30469' id='17' name='Label Count' w='29609' x='32969' y='8398'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+        <zone h='30566' id='18' name='Price vs Brand' w='33516' x='64844' y='8496'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+        <zone h='26465' id='19' name='Sensitive Skin Suitability' w='30391' x='938' y='42188'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+        <zone h='28125' id='22' name='Normal Skin Suitability' w='32813' x='64922' y='41699'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+        <zone h='27734' id='26' name='Dry Skin Suitability' w='28359' x='33828' y='42090'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+        <zone h='24805' id='27' name='Oily Skin Suitability' w='30547' x='1250' y='72461'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+        <zone h='24707' id='28' name='Brand vs Ranking' w='30313' x='33672' y='72461'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+        <zone h='24805' id='29' name='Label vs Ranking' w='32969' x='65078' y='72363'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontalignment='1'>Product Ranking and Detailed Analysis</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='2700' minheight='2700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='45' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98438' id='44' param='vert' type-v2='layout-flow' w='98750' x='625' y='781'>
+                <zone fixed-size='43' h='4980' id='7' type-v2='title' w='98750' x='625' y='781'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='2' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='30469' id='17' is-fixed='true' name='Label Count' w='29609' x='32969' y='8398'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='30566' id='18' is-fixed='true' name='Price vs Brand' w='33516' x='64844' y='8496'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='30000' id='16' is-fixed='true' name='Top 5 Brands' w='28125' x='1250' y='8854'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='28125' id='22' is-fixed='true' name='Normal Skin Suitability' w='32813' x='64922' y='41699'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='27734' id='26' is-fixed='true' name='Dry Skin Suitability' w='28359' x='33828' y='42090'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='26465' id='19' is-fixed='true' name='Sensitive Skin Suitability' w='30391' x='938' y='42188'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='24805' id='29' is-fixed='true' name='Label vs Ranking' w='32969' x='65078' y='72363'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='24805' id='27' is-fixed='true' name='Oily Skin Suitability' w='30547' x='1250' y='72461'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='24707' id='28' is-fixed='true' name='Brand vs Ranking' w='30313' x='33672' y='72461'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{15F58C1E-4848-47E7-BC15-879E9069F0D7}' />
+    </dashboard>
+    <dashboard name='Story 1' type='storyboard'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Understanding Product Suitability and Brand Performance </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='964' maxwidth='1016' minheight='964' minwidth='1016' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98340' id='1' param='vert' removable='false' type-v2='layout-flow' w='98426' x='787' y='830'>
+            <zone h='4357' id='3' type-v2='title' w='98426' x='787' y='830' />
+            <zone h='10477' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='98426' x='787' y='5187' />
+            <zone h='83506' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='98426' x='787' y='15664'>
+              <flipboard active-id='4' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point caption='Top 5 Brands in Cosmetics' captured-sheet='Top 5 Brands' id='1' />
+                  <story-point caption='Label Count for each product in Cosmetics' captured-sheet='Label Count' id='2' />
+                  <story-point caption='Price vs Brand Visualization' captured-sheet='Price vs Brand' id='3' />
+                  <story-point caption='Sensitive Skin Suitability' captured-sheet='Sensitive Skin Suitability' id='4' />
+                  <story-point caption='Dry Skin Suitability' captured-sheet='Dry Skin Suitability' id='5' />
+                  <story-point caption='Normal Skin Suitability' captured-sheet='Normal Skin Suitability' id='6' />
+                  <story-point caption='Oily skin Suitability' captured-sheet='Oily Skin Suitability' id='7' />
+                  <story-point caption='Brand vs Rank visualization' captured-sheet='Brand vs Ranking' id='8' />
+                  <story-point caption='Label vs Rank Visualization' captured-sheet='Label vs Ranking' id='9' />
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{FC26B1FA-C03F-4F51-A2BF-7FA2794203A5}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Top 5 Brands'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.18ts86l1qhm9kd16bf8og07k3y97].[none:Brand:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{8102B170-B9FA-4EB6-86F3-7F02A47DB574}' />
+    </window>
+    <window class='worksheet' name='Label Count'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{61729D7E-27FD-4F5F-BEB8-7D9F431988F9}' />
+    </window>
+    <window class='worksheet' name='Price vs Brand'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{17FF98F8-3A40-411F-A86A-A8CD08C5F249}' />
+    </window>
+    <window class='worksheet' name='Sensitive Skin Suitability'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.18ts86l1qhm9kd16bf8og07k3y97].[sum:Sensitive:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{5491AEFB-A3D1-4E1B-8CF6-536E38FC52FB}' />
+    </window>
+    <window class='worksheet' name='Dry Skin Suitability'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.18ts86l1qhm9kd16bf8og07k3y97].[none:Brand:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{C6B698B5-E4BC-4777-A40E-F44BB0367760}' />
+    </window>
+    <window class='worksheet' name='Normal Skin Suitability'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.18ts86l1qhm9kd16bf8og07k3y97].[none:Normal:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{1879157A-F4A8-41FF-BFD4-49CABFA40015}' />
+    </window>
+    <window class='worksheet' name='Oily Skin Suitability'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.18ts86l1qhm9kd16bf8og07k3y97].[none:Calculation_767582286114672640:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{6191FC1E-9DC0-46B2-9804-6CAAE81CA0A0}' />
+    </window>
+    <window class='worksheet' name='Brand vs Ranking'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.18ts86l1qhm9kd16bf8og07k3y97].[sum:Combination:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{2B5061E3-3962-497E-B3F2-B82BC83BB33A}' />
+    </window>
+    <window class='worksheet' name='Label vs Ranking'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.18ts86l1qhm9kd16bf8og07k3y97].[none:Label:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{46A12626-B7A3-4F9C-927B-17FEC74437AC}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Brand vs Ranking'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Dry Skin Suitability'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Label Count'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Label vs Ranking'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Normal Skin Suitability'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Oily Skin Suitability'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Price vs Brand'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sensitive Skin Suitability'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Top 5 Brands'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='18' />
+      <device-preview selected='Desktop' visible='true'>
+        <device name='Medium Desktop Monitor' type='Desktop' />
+      </device-preview>
+      <simple-id uuid='{D68D710F-E174-48F5-ACD7-694F5A2CCBF8}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Story 1'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{BB37C680-F820-49FC-99B0-ADD634317DE0}' />
+    </window>
+  </windows>
+</workbook>
