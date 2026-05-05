@@ -8,6 +8,11 @@ This project was developed as part of an internship, following a structured life
 
 ---
 
+## 📸 Dashboard Preview
+![Dashboard](Project Executable Files/Dashboard.png).
+
+---
+
 ## 🎯 Problem Statement
 Consumers often struggle to:
 - Identify trending cosmetic products  
@@ -62,10 +67,6 @@ This project follows an Agile methodology:
 - Developed dashboards iteratively  
 - Tracked progress using velocity and burndown charts  
 
----
-
-## 📸 Dashboard Preview
-https://github.com/VishnuMavilla004/Cosmetic-Insights-using-Tableau/blob/main/Project%20Executable%20Files/Dashboard.png
 ---
 
 ## 🔍 Insights Generated
