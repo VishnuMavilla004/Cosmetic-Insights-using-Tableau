@@ -1,5 +1,4 @@
-# Cosmetic Insights using Tableau  
-### Navigating Cosmetics Trends and Consumer Behavior
+# Cosmetic Insights using Tableau
 
 ## 📌 Overview
 Cosmetic Insights using Tableau is a data analysis and visualization project aimed at uncovering trends, patterns, and consumer preferences in the cosmetics industry. The project leverages Tableau dashboards to transform raw data into actionable insights for better decision-making.
@@ -9,7 +8,8 @@ This project was developed as part of an internship, following a structured life
 ---
 
 ## 📸 Dashboard Preview
-![Dashboard](Project Executable Files/Dashboard.png).
+
+![Dashboard](<Project Executable Files/Dashboard.png>).
 
 ---
 
